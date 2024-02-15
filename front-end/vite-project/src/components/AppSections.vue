@@ -105,12 +105,6 @@
 
 
 
-
-    <!-- carosello -->
-
-
-    <!-- carosello -->
-
 </template>
 
 <style scoped>
