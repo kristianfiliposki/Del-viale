@@ -2,17 +2,10 @@
   export default {
     data() {
       return {
-        slide: 0,
-        sliding: null
-      }
+    }
     },
     methods: {
-      onSlideStart(slide) {
-        this.sliding = true
-      },
-      onSlideEnd(slide) {
-        this.sliding = false
-      }
+
     }
   }
 </script>
@@ -27,7 +20,15 @@
                 </strong>
             </h2>
             <div class="col-12">
-                <button type="button" class="btn bg-white w-100"><strong class="d-flex justify-content-center align-content-around"><a href="" class="d-flex justify-content-center align-content-around f-24 w-50">ACCOUNT PLUS</a></strong></button>
+                <button type="button" class="btn bg-white w-100">
+                    <strong class="d-flex justify-content-center align-content-around">
+                        <!-- link  ACCOUNT PLUS -->
+                        <router-link to="/account-plus" class="nav-link">
+                                Account Plus
+                        </router-link>
+                        <!-- link  ACCOUNT PLUS -->
+                    </strong>
+                </button>
             </div>
         </div>
 
@@ -92,11 +93,14 @@
         <div class="box h-30 col-7 bg-white f-24">
             <h2 class="c-black d-flex justify-content-center align-content-around m-32 ">
                 <strong class="f-32">
-                    Numero Unico per ordini telefonici
+                    Numeri per ordini telefonici
                 </strong>
             </h2>
             <div class="col-12">
-                <div class="btn w-100 d-flex justify-content-center"><div class="d-flex justify-content-center align-content-around f-64 w-70 number">0765689337</div></div>
+                <div class="btn w-100 d-flex justify-content-center">
+                    <div class="d-flex justify-content-center align-content-around f-64 w-70 number p-8 m-8">0765689337</div>
+                    <div class="d-flex justify-content-center align-content-around f-64 w-70 number p-8 m-8">3204684143</div>
+                </div>
             </div>
         </div>
 

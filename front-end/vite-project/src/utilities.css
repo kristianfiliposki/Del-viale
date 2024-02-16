@@ -11,6 +11,10 @@
 	margin: 0 auto;
 }
 
+.border-radius{
+	border-radius: 30%;
+}
+
 /*** FLEX ***/
 .d-flex {	display: flex;	}
 .flex-row {	flex-direction: row; }

@@ -3,6 +3,7 @@ export default {
   data(){
     return {
       logo:"/public/img/logo.jpeg",
+
     }
   },
   methods:{},
@@ -19,7 +20,9 @@ export default {
     <!-- container logo-->
       <div class="col-4 ">
         <div class="container-logo col-2 h-50 d-flex flex-justify-center " >
-          <img :src="logo" alt="foto" class="foto-logo">
+          <router-link to="/" class="nav-link">
+            <img :src="logo" alt="foto" class="foto-logo">
+          </router-link>
         </div>
       </div>
       <!-- Macro Aree -->
@@ -32,20 +35,28 @@ export default {
       <div class=" col-4">
         <!-- container -->
         <div class="btn d-flex justify-end">
-
+          
           <!-- account plus -->
           <button type="button" class="btn bg-white m-8">
-            <strong>
-              Account Plus
-            </strong>
+            <!-- link  ACCOUNT PLUS -->
+            <router-link to="/account-plus" class="nav-link">
+              <strong>
+                Account Plus
+              </strong>            
+            </router-link>
+          <!-- link  ACCOUNT PLUS -->
           </button>
           <!-- fine account plus -->
 
           <!-- btn contattaci -->
           <button type="button" class="btn bg-white m-8">
-            <strong>
-              Contattaci
-            </strong>
+            <!-- link  ContactUs -->
+            <router-link to="/contact" class="nav-link">
+              <strong>
+                Contattaci
+              </strong>            
+            </router-link>
+            <!-- link  ContactUs -->
           </button>
           <!-- fine btn contattaci -->
         </div>
@@ -68,9 +79,12 @@ export default {
 a{text-decoration: none;}
 .container-logo{
   margin-left: 10%;
+  border-radius: 40%;
 }
 .foto-logo{
   width: 100%;
   height: 100%;
+  border-radius: 55%;
+
 }
 </style>
