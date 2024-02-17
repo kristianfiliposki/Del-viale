@@ -27,15 +27,10 @@ export default {
       </div>
       <!-- Macro Aree -->
       <div class=" d-flex flex-justify-center col-4  ">
-        <router-link to="/torte" class="nav-link c-white m-8">
-          TORTE
-        </router-link>
-        <router-link to="/gelati" class="nav-link c-white m-8">
-          GELATERIA
-        </router-link>
-        <router-link to="/coffe" class="nav-link c-white m-8">
-          COFFEEHOUSE
-        </router-link>
+        <a href="/torte" class="nav-link c-black m-8">TORTE</a>
+        <a href="/gelati" class="nav-link c-black m-8">GELATI</a>
+        <a href="/coffe" class="nav-link c-black m-8">COFFEEHOUSE</a>
+
       </div>
       <!-- Pulsanti -->
       <div class=" col-4">
@@ -43,9 +38,9 @@ export default {
         <div class="btn d-flex justify-end">
           
           <!-- account plus -->
-          <button type="button" class="btn bg-white m-8">
+          <button type="button" class="btn bg-grey m-8">
             <!-- link  ACCOUNT PLUS -->
-            <router-link to="/account-plus" class="nav-link">
+            <router-link to="/account-plus" class="nav-link c-white">
               <strong>
                 Account Plus
               </strong>            
@@ -55,9 +50,9 @@ export default {
           <!-- fine account plus -->
 
           <!-- btn contattaci -->
-          <button type="button" class="btn bg-white m-8">
+          <button type="button" class="btn bg-grey m-8">
             <!-- link  ContactUs -->
-            <router-link to="/contact" class="nav-link">
+            <router-link to="/contact" class="nav-link c-white">
               <strong>
                 Contattaci
               </strong>            
@@ -76,7 +71,7 @@ export default {
 <style scoped>
 .header-container{
   width: 100%;
-  background-color: rgba(10, 10, 10, 0.9);
+  background-color: rgba(210, 210, 210, 0.9);
   z-index: 999;
   position: fixed;
   margin: 0;

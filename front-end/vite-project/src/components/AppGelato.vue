@@ -1,11 +1,13 @@
 <script >
 import { store  } from '../store';
+import AppCarosel from './AppCarosel.vue';
 export default{
-    data(){
-        return{
+    data() {
+        return {
             store,
-        }
-    }
+        };
+    },
+    components: { AppCarosel }
 }
 </script>
 <template>
@@ -13,7 +15,21 @@ export default{
     <div class="row d-flex flex-justify-center wrapper ">
         <div class="col-8 ">
 
-            <div class="wrapper  vh-100 ">
+            <div class="wrapper   ">
+                <div class="row"><h1 class="col-12 mb-32 mr-32">Anni di studio per un buon gelato</h1></div>
+                
+                <!--Box Blocchi-->
+                <div class=" w-100 vh-50 bg-red mb-64">
+                    <div class="w-100 h-100 scroll-preparazione ">
+                        <AppCarosel/>
+                        <div class="foto-prep w-100 h-100" id="foto-prep1"></div>
+                        <div class="foto-prep w-100 h-100" id="foto-prep2"></div>
+                        <div class="foto-prep w-100 h-100" id="foto-prep3"></div>
+
+                    </div>
+                </div>
+
+                <!-- gelati jambotron -->
                 <!-- gelati jambotron -->
                 <div class="row"><h1 class="col-12 mb-32 mr-32">I nostri gelati,sono un nostro vanto!</h1></div>
                 <!--Box Blocchi-->
@@ -53,7 +69,7 @@ export default{
                 </div>
                 <!-- gelati img carosello -->
                 
-                <!-- registrati link Account Plus -->
+                <!-- prodotti linkati alle piattaforme -->
                 <div class=" mt-64 wrapper register mb-64">
                     <div class="platform h-30 bg-white ">
                         <h2 class="c-black d-flex justify-content-center align-content-around m-32">
@@ -111,13 +127,9 @@ export default{
                         </div>
                     </div>
                 </div>
-                <!-- registrati link Account Plus -->
+                <!-- prodotti linkati alle piattaforme -->
+            </div>
         </div>
-
-    </div>
-        
-        <!-- prodotti linkati alle piattaforme -->
-        <!-- prodotti linkati alle piattaforme -->
     </div>
 
 </template>
@@ -212,6 +224,25 @@ a{
 
 .food-platform{
     padding: 3%;
+}
+
+.scroll-preparazione {
+    overflow: auto;
+}
+
+#foto-prep1{
+    background-image: url("/public/img/prep-1.jpeg");
+    background-position: center;
+}
+
+#foto-prep2{
+    background-image: url("/public/img/prep-2.jpeg");
+    background-position: center;
+}
+
+#foto-prep3{
+    background-image: url("/public/img/prep-3.jpeg");
+    background-position: center;
 }
 
 

@@ -13,17 +13,17 @@
 <template>
     <div class="row partner container-fluid w-100 d-flex justify-content-center align-content-around">
         
-        <div class="box h-30 col-7 bg-white f-24">
-            <h2 class="c-black d-flex justify-content-center align-content-around m-32 ">
+        <div class="box h-30 col-7 bg-white f-24 account-plus">
+            <h2 class="c-black d-flex justify-content-center align-content-around m-32 c-white">
                 <strong>
                     DIVENTA PARTE DELLA NOSTRA FAMIGLIA
                 </strong>
             </h2>
-            <div class="col-12">
-                <button type="button" class="btn bg-white w-100">
+            <div class="col-12 ">
+                <button type="button" class="btn  w-100">
                     <strong class="d-flex justify-content-center align-content-around">
                         <!-- link  ACCOUNT PLUS -->
-                        <router-link to="/account-plus" class="nav-link">
+                        <router-link to="/account-plus" class="nav-link bg-white account-button">
                                 Account Plus
                         </router-link>
                         <!-- link  ACCOUNT PLUS -->
@@ -33,14 +33,14 @@
         </div>
 
         <div class="box h-30 col-7 bg-white ">
-            <h2 class="c-black d-flex justify-content-center align-content-around m-32">
+            <h2 class="c-black d-flex justify-content-center align-content-around m-32 c-grey">
                 <strong>
                     ORDINA DIRETTAMENTE A CASA TUA
                 </strong>
             </h2>
 
             <div class="row food-platform">
-                <div class="col-4">
+                <div class="col-4 container-section">
                     <button type="button" class="btn bg-white w-100">
                         <strong>
                           <a href="https://www.justeat.it/restaurants-la-gelateria-del-viale-fiano-romano/menu" class="d-flex justify-content-center align-content-around f-24">
@@ -55,7 +55,7 @@
                     </button>
                 </div>
     
-                <div class="col-4">
+                <div class="col-4 container-section">
                     <button type="button" class="btn bg-white w-100">
                         <strong>
                             <a href="https://deliveroo.it/it/menu/Capena/capena/la-gelateria-del-viale/?geohash=sr2zykq6nfcp" class="d-flex justify-content-center align-content-around f-24">
@@ -70,7 +70,7 @@
                     </button>
                 </div>
 
-                <div class="col-4">
+                <div class="col-4 container-section">
                     <button type="button" class="btn bg-white w-100">
                         <strong>
                          <a href="https://glovoapp.com/it/it/fiano-romano/la-gelateria-del-viale-frc/" class="d-flex justify-content-center align-content-around f-24">
@@ -92,14 +92,14 @@
 
         <div class="box h-30 col-7 bg-white f-24">
             <h2 class="c-black d-flex justify-content-center align-content-around m-32 ">
-                <strong class="f-32">
+                <strong class="f-32 c-grey">
                     Numeri per ordini telefonici
                 </strong>
             </h2>
             <div class="col-12">
                 <div class="btn w-100 d-flex justify-content-center">
-                    <div class="d-flex justify-content-center align-content-around f-64 w-70 number p-8 m-8">0765689337</div>
-                    <div class="d-flex justify-content-center align-content-around f-64 w-70 number p-8 m-8">3204684143</div>
+                    <div class="d-flex justify-content-center align-content-around f-32 w-70 number p-8 m-8">0765689337</div>
+                    <div class="d-flex justify-content-center align-content-around f-32 w-70 number p-8 m-8">3204684143</div>
                 </div>
             </div>
         </div>
@@ -112,8 +112,20 @@
 </template>
 
 <style scoped>
+
+.account-plus{
+    background-image: url('/public/img/account.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.account-button{
+    border-radius: 12px;
+}
 .number{
-    border: 3px solid black;
+    border: 3px solid grey;
+    font-weight: 100;
+    color: grey;
 }
 
 a{
@@ -143,6 +155,7 @@ a{
 .partner .box {
     margin: 5%;
     border: 1px solid rgba(90, 90, 90,0.6);
+    border-radius: 5%;
 
     padding: 5%;
 }
@@ -155,4 +168,6 @@ a{
 .food-platform{
     padding: 3%;
 }
+
+
 </style>

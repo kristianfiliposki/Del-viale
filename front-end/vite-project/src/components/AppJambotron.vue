@@ -15,8 +15,9 @@
 <style scoped>
 
     .jambootron{
-        background-image: url("/public/img/bancone.jpeg");
-        background-position: center;
+        background-image: url("/public/img/entrata.jpeg");
+        background-size: cover;
+        background-position: left;
         font-size: 8rem;
         font-weight: 900;
         font-family: "Protest Riot", sans-serif;
