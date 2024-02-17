@@ -27,9 +27,15 @@ export default {
       </div>
       <!-- Macro Aree -->
       <div class=" d-flex flex-justify-center col-4  ">
-        <a href="" class="c-white mr-8">TORTE</a>
-        <a href="" class="c-white mr-8">GELATERIA</a>
-        <a href="" class="c-white mr-8">COFFEEHOUSE</a>
+        <router-link to="/torte" class="nav-link c-white m-8">
+          TORTE
+        </router-link>
+        <router-link to="/gelati" class="nav-link c-white m-8">
+          GELATERIA
+        </router-link>
+        <router-link to="/coffe" class="nav-link c-white m-8">
+          COFFEEHOUSE
+        </router-link>
       </div>
       <!-- Pulsanti -->
       <div class=" col-4">

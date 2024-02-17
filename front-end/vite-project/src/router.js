@@ -5,6 +5,10 @@ import {createRouter,createWebHistory} from "vue-router";
 import AppMain from './components/AppMain.vue';
 import AppForm from './components/AppForm.vue';
 import AppContact from './components/AppContact.vue';
+import AppGelato from './components/AppGelato.vue';
+import AppCoffe from './components/AppCoffe.vue';
+import AppTorta from './components/AppTorta.vue';
+
 
 
 const router=createRouter({
@@ -22,8 +26,23 @@ const router=createRouter({
         },        
         {
             path:"/contact",
-            name:"contacts",
+            name:"Conctac-US",
             component: AppContact,
+        },        
+        {
+            path:"/torte",
+            name:"Torta",
+            component: AppTorta,
+        },        
+        {
+            path:"/coffe",
+            name:"Coffehouse",
+            component: AppCoffe,
+        },        
+        {
+            path:"/gelati",
+            name:"Gelati",
+            component: AppGelato,
         },        
 
     ],
