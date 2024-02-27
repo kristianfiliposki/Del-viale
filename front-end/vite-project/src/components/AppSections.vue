@@ -1,13 +1,16 @@
 <script>
+
+import { store } from '../store';
+import AppCarosel from './AppCarosel.vue';
   export default {
     data() {
-      return {
-    }
+        return {
+            store,
+        };
     },
-    methods: {
-
-    }
-  }
+    methods: {},
+    components: { AppCarosel }
+}
 </script>
 
 <template>
@@ -88,6 +91,7 @@
             </div>
 
 
+
         </div>
 
         <div class="box h-30 col-7 bg-white f-24">
@@ -105,7 +109,7 @@
         </div>
 
     </div>
-
+    
 
 
 

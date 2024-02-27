@@ -1,11 +1,13 @@
 <script setup>
+import AppCarosel from './AppCarosel.vue';
+
 
 </script>
 <template>
     <!-- main -->
     <div class="main">
         <div class="col-12 jambootron vh-100 d-flex justify-content-center align-items-center c-white protest-riot-regular">
-            DEL VIALE
+            <AppCarosel/>
         </div>
     </div>
     <!--fine main -->
@@ -15,7 +17,7 @@
 <style scoped>
 
     .jambootron{
-        background-image: url("/public/img/entrata.jpeg");
+        background-color: bisque;
         background-size: cover;
         background-position: left;
         font-size: 8rem;
