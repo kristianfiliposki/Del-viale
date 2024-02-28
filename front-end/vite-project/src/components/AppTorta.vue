@@ -1,11 +1,13 @@
 <script >
 import { store  } from '../store';
+import AppCarosel from './AppCarosel.vue';
 export default{
-    data(){
-        return{
+    data() {
+        return {
             store,
-        }
-    }
+        };
+    },
+    components: { AppCarosel }
 }
 </script>
 <template>
@@ -15,13 +17,13 @@ export default{
 
             <div class="wrapper  ">
                 <!-- gelati jambotron -->
-                <div class="row"><h1 class="col-12 mb-32 mr-32">Il dottore delle Torte!</h1></div>
+                <div class="row">
+                    <h1 class="col-12 mb-32 mr-32">Il dottore delle Torte!</h1>
+                </div>
                 <!--Box Blocchi-->
                 <div class=" w-100 vh-50 bg-red">
                     <div class="w-100 h-100 d-flex ">
-        
-
-        
+                        <AppCarosel/>
                     </div>
                 </div>
                 <!-- gelati jambotron -->

@@ -7,7 +7,7 @@ import AppCarosel from './AppCarosel.vue';
     <!-- main -->
     <div class="main">
         <div class="col-12 jambootron vh-100 d-flex justify-content-center align-items-center c-white protest-riot-regular">
-            <AppCarosel/>
+            <AppCarosel imgA="/public/img/prep-1.jpeg" imgB="/public/img/entrata.jpeg"/>
         </div>
     </div>
     <!--fine main -->
@@ -26,5 +26,6 @@ import AppCarosel from './AppCarosel.vue';
         font-style: normal;
     };
 
+        
 
 </style>

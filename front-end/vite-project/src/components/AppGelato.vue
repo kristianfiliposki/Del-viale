@@ -20,12 +20,8 @@ export default{
                 
                 <!--Box Blocchi-->
                 <div class=" w-100 vh-50 bg-red mb-64">
-                    <div class="w-100 h-100 scroll-preparazione ">
+                    <div class="w-100 h-100  ">
                         <AppCarosel/>
-                        <div class="foto-prep w-100 h-100" id="foto-prep1"></div>
-                        <div class="foto-prep w-100 h-100" id="foto-prep2"></div>
-                        <div class="foto-prep w-100 h-100" id="foto-prep3"></div>
-
                     </div>
                 </div>
 
@@ -224,25 +220,6 @@ a{
 
 .food-platform{
     padding: 3%;
-}
-
-.scroll-preparazione {
-    overflow: auto;
-}
-
-#foto-prep1{
-    background-image: url("/public/img/prep-1.jpeg");
-    background-position: center;
-}
-
-#foto-prep2{
-    background-image: url("/public/img/prep-2.jpeg");
-    background-position: center;
-}
-
-#foto-prep3{
-    background-image: url("/public/img/prep-3.jpeg");
-    background-position: center;
 }
 
 

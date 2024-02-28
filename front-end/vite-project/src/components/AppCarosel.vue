@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 
 // Import Swiper styles
 import 'swiper/css';
-
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
@@ -15,6 +14,11 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default {
+  name:"AppCarosel",
+  props:[
+    "imgA",
+    "imgB",
+],
   components: {
     Swiper,
     SwiperSlide,
@@ -50,8 +54,8 @@ export default {
       @autoplayTimeLeft="onAutoplayTimeLeft"
       class="mySwiper"
     >
-      <swiper-slide id="s1">Slide 1</swiper-slide>
-      <swiper-slide id="s2">Slide 2</swiper-slide>
+      <swiper-slide id="s1"><img :src="imgA" alt=""></swiper-slide>
+      <swiper-slide id="s2"><img :src="imgB" alt=""></swiper-slide>
       <swiper-slide id="s3">Slide 3</swiper-slide>
       <swiper-slide id="s4">Slide 4</swiper-slide>
       <swiper-slide id="s5">Slide 5</swiper-slide>
@@ -68,12 +72,10 @@ export default {
   <style scoped>
 
 #s1{
-    background-image: url("/public/img/prep-1.jpeg");
     background-size:cover;
 }
 
 #s2{
-    background-image: url("/public/img/entrata2.jpeg");
     background-size: cover;
 }
 #s3{
