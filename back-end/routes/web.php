@@ -17,8 +17,6 @@ use App\Http\Controllers\Admin\DashboardController; //<---- Import del controlle
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/products', [ProductController::class,"index"]);
-
 
 Route::middleware(['auth'])
     ->prefix('admin') //definisce il prefisso "admin/" per le rotte di questo gruppo
