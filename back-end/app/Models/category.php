@@ -4,13 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\models\Product;
 
-class Category extends Model
+class category extends Model
 {
     use HasFactory;
 
-    public function posts()
-    {
-        return $this->hasMany(Post::class);
+    public function Product(){
+        return $this->belongsToMany(Product::class);
     }
 }

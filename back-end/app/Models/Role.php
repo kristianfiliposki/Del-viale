@@ -4,13 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\models\User;
 
-class Tag extends Model
+
+class role extends Model
 {
     use HasFactory;
 
-    public function posts()
-    {
-        return $this->belongsToMany(Post::class);
+    public function User(){
+        return $this->hasMany(User::class);
     }
+
 }

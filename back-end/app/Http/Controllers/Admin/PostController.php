@@ -17,7 +17,7 @@ class PostController extends Controller
     {
         $posts = Post::all();
 
-        return view("admin.posts.index", compact("posts"));
+        return view("admin.products.index", compact("posts"));
     }
 
     /**
@@ -28,7 +28,7 @@ class PostController extends Controller
         $categories = Category::all();
         $tags = Tag::all();
 
-        return view("admin.posts.create", compact("categories", "tags"));
+        return view("admin.products.create", compact("categories", "tags"));
     }
 
     /**
@@ -49,7 +49,7 @@ class PostController extends Controller
         }
 
         // return redirect()->route("admin.posts.show", $newPost->id);
-        return redirect()->route("admin.posts.index");
+        return redirect()->route("admin.products.index");
     }
 
     /**
