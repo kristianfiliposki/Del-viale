@@ -3,7 +3,7 @@ import {createRouter,createWebHistory} from "vue-router";
 
 /* importa un elemento */
 import AppMain from './components/AppMain.vue';
-import AppForm from './components/AppForm.vue';
+import AppAccountPlus from './components/AppAccountPlus.vue';
 import AppContact from './components/AppContact.vue';
 import AppGelato from './components/AppGelato.vue';
 import AppCoffe from './components/AppCoffe.vue';
@@ -21,8 +21,8 @@ const router=createRouter({
         },
         {
             path:"/account-plus",
-            name:"Form",
-            component: AppForm,
+            name:"AppAccountPlus",
+            component: AppAccountPlus,
         },        
         {
             path:"/contact",

@@ -66,14 +66,9 @@ export default{
                 <div class="d-flex" id="logo"><img src="/public/img/logo.jpeg" alt="foto-logo"></div>
                 <!--logo-->
 
-                <!--pulsante registrati-->
-                <router-link to="/account-plus" class="nav-link">
-              <strong c-white>
-                Account Plus
-              </strong>            
-            </router-link>
-                <div class="bottone"><button><a href="account-plus"><p class="c-white">Registrati</p> </a></button></div>
-                <!--pulsante registrati-->
+
+                <div class="bottone"><button><a href="http://127.0.0.1:8000/register"><p class="c-white">Registrati</p> </a></button></div>
+       
 
             </div>
         </div>
