@@ -40,11 +40,7 @@ export default {
           <!-- account plus -->
           <button type="button" class="btn bg-grey m-8">
             <!-- link  ACCOUNT PLUS -->
-            <router-link to="/account-plus" class="nav-link c-white">
-              <strong>
-                Account Plus
-              </strong>            
-            </router-link>
+            <a href="http://127.0.0.1:8000/register" class="nav-link c-white">Entra nell'Account plus</a>
           <!-- link  ACCOUNT PLUS -->
           </button>
           <!-- fine account plus -->
