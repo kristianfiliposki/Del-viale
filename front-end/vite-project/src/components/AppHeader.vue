@@ -20,9 +20,11 @@ export default {
     <!-- container logo-->
       <div class="col-4 ">
         <div class="container-logo col-2 h-50 d-flex flex-justify-center " >
-          <router-link to="/" class="nav-link">
-            <img :src="logo" alt="foto" class="foto-logo">
-          </router-link>
+        
+            <a href="/" class="nav-link">
+              <img :src="logo" alt="foto" class="foto-logo">
+            </a>
+
         </div>
       </div>
       <!-- Macro Aree -->
@@ -30,6 +32,8 @@ export default {
         <a href="/torte" class="nav-link c-black m-8">TORTE</a>
         <a href="/gelati" class="nav-link c-black m-8">GELATI</a>
         <a href="/coffe" class="nav-link c-black m-8">COFFEEHOUSE</a>
+        <a href="/account-plus" class="nav-link c-black m-8">ACCOUNT PLUS</a>
+
 
       </div>
       <!-- Pulsanti -->
@@ -48,11 +52,11 @@ export default {
           <!-- btn contattaci -->
           <button type="button" class="btn bg-grey m-8">
             <!-- link  ContactUs -->
-            <router-link to="/contact" class="nav-link c-white">
-              <strong>
-                Contattaci
-              </strong>            
-            </router-link>
+              <a href="/contact" class="nav-link c-white">
+                <strong>
+                  Contattaci
+                </strong>            
+              </a>
             <!-- link  ContactUs -->
           </button>
           <!-- fine btn contattaci -->

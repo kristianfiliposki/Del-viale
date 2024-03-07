@@ -67,7 +67,9 @@ export default{
                 <!--logo-->
 
 
-                <div class="bottone"><button><a href="http://127.0.0.1:8000/register"><p class="c-white">Registrati</p> </a></button></div>
+                <div class="linkedin"><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><p class="c-white">Powered By Kristian Filiposki</p> </a></div>
+
+                <a href="http://127.0.0.1:8000/register"><div class="bottone"><button><p class="c-white">Registrati</p></button></div></a>
        
 
             </div>
@@ -79,6 +81,12 @@ export default{
 </template>
 <style scoped>
 
+.linkedin{
+
+    padding: 3px;
+    border-radius: 2%;
+    font-size: 1.1em;
+}
 
 h3,h2{
     color: grey !important;
