@@ -42,7 +42,7 @@
                     </router-link>
 				</div>
 				<figure>
-					<img src="/public/img/torta-frutta.jpeg" alt="Image description">
+					<img src="/public/img/torta.jpeg" alt="Image description">
 				</figure>
 			</div>
 		</li>

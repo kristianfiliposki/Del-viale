@@ -19,9 +19,15 @@ export default{
                 <div class="row"><h1 class="col-12 mb-32 mr-32">Anni di studio per un buon gelato</h1></div>
                 
                 <!--Box Blocchi-->
-                <div class=" w-100 vh-50 bg-red mb-64">
+                <div class=" w-100 vh-50  mb-64">
                     <div class="w-100 h-100  ">
-                        <AppCarosel/>
+                        <AppCarosel 
+                            imgA="/public/img/prep-1.jpeg" 
+                            imgB="/public/img/prep-2.jpeg" 
+                            imgC="/public/img/prep-3.jpeg" 
+                            imgD="/public/img/prep-4.jpeg" 
+                            imgE="/public/img/prep-5.jpeg" 
+                            />
                     </div>
                 </div>
 

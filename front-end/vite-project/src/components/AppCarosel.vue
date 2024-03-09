@@ -18,6 +18,11 @@ export default {
   props:[
     "imgA",
     "imgB",
+    "imgC",
+    "imgD",
+    "imgE",
+
+
 ],
   components: {
     Swiper,
@@ -56,9 +61,9 @@ export default {
     >
       <swiper-slide id="s1"><img :src="imgA" alt=""></swiper-slide>
       <swiper-slide id="s2"><img :src="imgB" alt=""></swiper-slide>
-      <swiper-slide id="s3">Slide 3</swiper-slide>
-      <swiper-slide id="s4">Slide 4</swiper-slide>
-      <swiper-slide id="s5">Slide 5</swiper-slide>
+      <swiper-slide id="s3"><img :src="imgC" alt="" id="s3"></swiper-slide>
+      <swiper-slide id="s4"><img :src="imgD" alt=""></swiper-slide>
+      <swiper-slide id="s5"><img :src="imgE" alt=""></swiper-slide>
       <template #container-end>
         <div class="autoplay-progress">
           <svg viewBox="0 0 48 48" ref="progressCircle">
@@ -72,26 +77,24 @@ export default {
   <style scoped>
 
 #s1{
-    background-size:cover;
+
 }
 
 #s2{
-    background-size: cover;
+ 
 }
+
 #s3{
-    background-image: url("/public/img/bancone.jpeg");
-    background-size: cover;
+  object-fit: contain;
 }
+
 #s4{
-    background-image: url("/public/img/prep-4.jpeg");
-    background-size: contain;
+  
 }
+
 #s5{
-    background-image: url("/public/img/prep-3.jpeg");
-    background-size: contain;
+  
 }
-
-
 
 .swiper {
   width: 100%;
@@ -112,7 +115,8 @@ export default {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:contain ;
+  position: center;
 }
 
 .autoplay-progress {

@@ -21,9 +21,15 @@ export default{
                     <h1 class="col-12 mb-32 mr-32">Il dottore delle Torte!</h1>
                 </div>
                 <!--Box Blocchi-->
-                <div class=" w-100 vh-50 bg-red">
+                <div class=" w-100 vh-50 ">
                     <div class="w-100 h-100 d-flex ">
-                        <AppCarosel/>
+                        <AppCarosel 
+                            imgA="/public/img/torta-4.png" 
+                            imgB="/public/img/torta-2.jpg" 
+                            imgC="/public/img/torta-3.png" 
+                            imgD="/public/img/torta-5.png" 
+                            imgE="/public/img/torta.png" 
+                            />
                     </div>
                 </div>
                 <!-- gelati jambotron -->

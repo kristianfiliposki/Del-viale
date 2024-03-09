@@ -1,11 +1,14 @@
 <script >
 import { store  } from '../store';
+import AppCarosel from './AppCarosel.vue';
 export default{
     data(){
         return{
             store,
         }
-    }
+    },
+    components: { AppCarosel }
+
 }
 </script>
 <template>
@@ -15,13 +18,17 @@ export default{
 
             <div class="wrapper ">
                 <!-- gelati jambotron -->
-                <div class="row"><h1 class="col-12 mb-32 mr-32">I nostri gelati,sono un nostro vanto!</h1></div>
+                <div class="row"><h1 class="col-12 mb-32 mr-32">Non siamo un semplice bar o una tavola calda,da noi ti sentirai a casa!</h1></div>
                 <!--Box Blocchi-->
-                <div class=" w-100 vh-50 bg-red">
-                    <div class="w-100 h-100 d-flex ">
-        
-                         
-        
+                <div class=" w-100 vh-50 d-flex flex-justify-center border-radius carosel-box">
+                    <div class="w-70 h-100 d-flex ">
+                        <AppCarosel 
+                            imgA="/public/img/coffe-machine.jpeg" 
+                            imgB="/public/img/pizza-1.jpeg" 
+                            imgC="/public/img/pizza-2.jpeg" 
+                            imgD="/public/img/coffes.jpg" 
+                            imgE="/public/img/coffe.jpg" 
+                            />
                     </div>
                 </div>
                 <!-- gelati jambotron -->
