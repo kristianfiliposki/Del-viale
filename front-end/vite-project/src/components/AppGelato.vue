@@ -18,7 +18,9 @@ export default{
             <div class="wrapper   ">
                 <div class="row"><h1 class="col-12 mb-32 mr-32">Anni di studio per un buon gelato</h1></div>
                 
-                <!--Box Blocchi-->
+
+                
+                <!--Carosello-->
                 <div class=" w-100 vh-50  mb-64">
                     <div class="w-100 h-100  ">
                         <AppCarosel 
@@ -227,6 +229,9 @@ a{
 .food-platform{
     padding: 3%;
 }
+
+
+
 
 
 

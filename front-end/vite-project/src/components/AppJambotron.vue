@@ -76,29 +76,29 @@ components: {
 <style scoped>
 
 #s1{
-background-image: url('/public/img/prep-1.jpeg');
-background-size:cover ;
-background-position: center;
+    background-image: url('/public/img/gelato-vetrina.png');
+    background-size:cover ;
+    background-position: center;
 }
 
 #s2{
- background-image: url('/public/img/entrata.jpeg');
- background-size:cover ;
+    background-image: url('/public/img/prep-1.jpeg');
+    background-size:cover ;
     background-position: center;
-
-
+    
+    
 }
 
 #s3{
-  background-image: url('/public/img/Coffe-machine.jpeg');
-  background-size:cover ;
-  background-position: center;
-
-
+    background-image: url('/public/img/entrata.jpeg');
+    background-size:cover ;
+    background-position: center;
+    
+    
 }
 
 #s4{
-  background-image: url('/public/img/gelato-vetrina.png');
+  background-image: url('/public/img/Coffe-machine.jpeg');
   background-size:cover ;
   background-position: center;
 

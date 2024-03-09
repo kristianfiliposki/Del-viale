@@ -31,7 +31,7 @@ export default {
       <div class=" d-flex flex-justify-center col-4  ">
         <a href="/torte" class="nav-link c-black m-8">TORTE</a>
         <a href="/gelati" class="nav-link c-black m-8">GELATI</a>
-        <a href="/coffe" class="nav-link c-black m-8">COFFEEHOUSE</a>
+        <a href="/coffe" class="nav-link c-black m-8">TAVOLA CALDA</a>
         <a href="/account-plus" class="nav-link c-black m-8">ACCOUNT PLUS</a>
 
 
