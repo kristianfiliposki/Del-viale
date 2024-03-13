@@ -9,9 +9,7 @@ use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
+
     public function run(): void
     {
         $users = [
@@ -24,11 +22,11 @@ class UserSeeder extends Seeder
 
         ];
 
-        foreach ($users as $user) {
-            $newuser = new User();
-            $newuser->fill($user);
-            $newuser->save();
-            dd('User seeded:', $newUser);
-        }
+foreach ($users as $user) {
+    $newuser = new User();
+    $newuser->fill($user);
+    $newuser->save();
+    dd('User seeded:', $newuser); // Utilizza $newuser invece di $newUser
+}
     }
 }

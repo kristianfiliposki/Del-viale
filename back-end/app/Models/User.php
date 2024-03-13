@@ -8,20 +8,11 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class user extends Model
-{
-    use HasFactory;
 
-    public function User(){
- 
-    }
-
-}
 
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
 
     /**
      * The attributes that are mass assignable.
