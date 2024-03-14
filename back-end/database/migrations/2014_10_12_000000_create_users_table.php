@@ -13,16 +13,20 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->integer('punti');
-            $table->string('password');
-            $table->rememberToken();
-            $table->timestamps();
-        });
+    Schema::create('users', function (Blueprint $table) {
+        $table->id();
+
+        $table->string('name');
+        $table->string('email')->unique();
+        $table->timestamp('email_verified_at')->nullable();
+        $table->integer('punti');
+        $table->string('password');
+        $table->rememberToken();
+        $table->timestamps();
+    });
+
+    /* non risco a fare la relazione inversa perchè roles deve essere migrata prima di users ,solo che users è la tabella _00000_*/
+
     }
 
     /**

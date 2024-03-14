@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\models\User;
 
-
-class role extends Model
+class Role extends Model
 {
     use HasFactory;
 
@@ -15,4 +14,9 @@ class role extends Model
         return $this->hasMany(User::class);
     }
 
+    public $fillable=[
+        'name',
+    ];
+
+       
 }
