@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController; //<---- Import del controller precedentemente creato!
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,9 +15,11 @@ use App\Http\Controllers\Admin\DashboardController; //<---- Import del controlle
 |
 */
 
-Route::get('/', function () {
+
+Route::get('/',  function () {
     return view('welcome');
 });
+
 
 Route::middleware(['auth'])
     ->prefix('admin') //definisce il prefisso "admin/" per le rotte di questo gruppo

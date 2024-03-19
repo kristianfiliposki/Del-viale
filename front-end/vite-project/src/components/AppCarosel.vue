@@ -59,11 +59,11 @@ export default {
       @autoplayTimeLeft="onAutoplayTimeLeft"
       class="mySwiper"
     >
-      <swiper-slide id="s1"><img :src="imgA" alt=""></swiper-slide>
-      <swiper-slide id="s2"><img :src="imgB" alt=""></swiper-slide>
-      <swiper-slide id="s3"><img :src="imgC" alt="" id="s3"></swiper-slide>
-      <swiper-slide id="s4"><img :src="imgD" alt=""></swiper-slide>
-      <swiper-slide id="s5"><img :src="imgE" alt=""></swiper-slide>
+      <swiper-slide><img :src="imgA" alt="" id="s1"></swiper-slide>
+      <swiper-slide><img :src="imgB" alt="" id="s2"></swiper-slide>
+      <swiper-slide><img :src="imgC" alt="" id="s3"></swiper-slide>
+      <swiper-slide><img :src="imgD" alt="" id="s4"></swiper-slide>
+      <swiper-slide><img :src="imgE" alt="" id="s5"></swiper-slide>
       <template #container-end>
         <div class="autoplay-progress">
           <svg viewBox="0 0 48 48" ref="progressCircle">
@@ -77,23 +77,23 @@ export default {
   <style scoped>
 
 #s1{
-
+  object-fit: cover;
 }
 
 #s2{
- 
+   object-fit: cover;
 }
 
 #s3{
-  object-fit: contain;
+  object-fit: cover;
 }
 
 #s4{
-  
+    object-fit: cover;
 }
 
 #s5{
-  
+    object-fit: cover;
 }
 
 .swiper {

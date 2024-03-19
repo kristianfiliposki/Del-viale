@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
+            /* user id  */
             $table->unsignedBigInteger("user_id")->nullable()->unique();
             $table->foreign("user_id")->references("id")->on("users")->nullOnDelete();
-            
-
+            /* role id  */
             $table->unsignedBigInteger("role_id")->nullable();
             $table->foreign("role_id")->references("id")->on("roles")->nullOnDelete();
-            
+
             $table->string('name');
             $table->integer('punti');
             $table->string('img_url');

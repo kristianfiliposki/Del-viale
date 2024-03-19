@@ -34,9 +34,11 @@ export default{
 </script>
 
 <template>
-  <AppHeader/>
-  <router-view></router-view>
-  <AppFooter/>
+  <body>
+    <AppHeader/>
+    <router-view></router-view>
+    <AppFooter/>
+  </body>
 
   
 </template>
@@ -45,5 +47,7 @@ export default{
 *{
   font-family: sans-serif;
 }
+
+
 
 </style>

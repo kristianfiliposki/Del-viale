@@ -23,11 +23,11 @@ export default{
                 <div class=" w-100 vh-50 d-flex flex-justify-center border-radius carosel-box">
                     <div class="w-70 h-100 d-flex ">
                         <AppCarosel 
-                            imgA="/public/img/coffe-machine.jpeg" 
-                            imgB="/public/img/pizza-1.jpeg" 
-                            imgC="/public/img/pizza-2.jpeg" 
-                            imgD="/public/img/coffes.jpg" 
-                            imgE="/public/img/coffe.jpg" 
+                            imgA="/public/img/teglia.jpeg" 
+                            imgB="/public/img/pizza-0.jpeg" 
+                            imgC="/public/img/cacao.jpeg" 
+                            imgD="/public/img/pasta.jpeg" 
+                            imgE="/public/img/caffe.jpeg" 
                             />
                     </div>
                 </div>
