@@ -32,12 +32,9 @@ Route::middleware(['auth'])
     // - il percorso "/" diventa "admin/"
     // - il nome della rotta ->name("dashboard") diventa ->name("admin.dashboard")
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-    Route::get('/sms', 
-    /* function () {
-        $sms=Message::all();
-        return view("admin.sms",compact("sms"));
-    } */
-    [MessaggiController::class,'index']);
+    Route::get('/sms', [MessaggiController::class,'index'])->name('index');
+    Route::get('/sms/create', [MessaggiController::class,'create'])->name('sms.create');
+    Route::post('/sms', [MessaggiController::class, 'store'])->name('sms.store');
 });
 
 require __DIR__ . '/auth.php';

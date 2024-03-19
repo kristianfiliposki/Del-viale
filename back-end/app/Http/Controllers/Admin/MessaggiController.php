@@ -14,7 +14,7 @@ class MessaggiController extends Controller
     public function index()
     {
         $messagges=Message::all();
-        return view('Admin.sms',compact('messagges'));
+        return view('Admin.sms.index',compact('messagges'));
     }
 
     /**
@@ -22,7 +22,7 @@ class MessaggiController extends Controller
      */
     public function create()
     {
-        //
+      return view('Admin.sms.create');
     }
 
     /**
@@ -30,7 +30,12 @@ class MessaggiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data=$request->all();
+        $newMessages=new Message;
+        $newMessages->testo=$data['testo'];
+        $newMessages->save();
+        return redirect()->route('admin.index');
+
     }
 
     /**

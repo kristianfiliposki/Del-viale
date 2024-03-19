@@ -39,6 +39,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('http://localhost:5174/') }}">{{ __('Home') }}</a>
                         </li>
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('admin.sms.create') }}">{{ __('SMS') }}</a>
+                            </li>
+                        </ul>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
