@@ -158,6 +158,7 @@ h1{
 
 .register{
     border: 3px solid black;
+    background-color: white;
 }
 
 a{

@@ -43,6 +43,10 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('admin.sms.create') }}">{{ __('SMS') }}</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('admin.dashboard') }}">{{ __('My profile') }}</a>
+                            </li>
+
                         </ul>
                     </ul>
 

@@ -5,19 +5,42 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Dashboard') }}</div>
+                    <div class="card-header">{{ __('tutti gli utenti') }}</div>
 
-                    <div class="card-body">
+                    <div class="card-body box">
                         @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
+                            
                         @endif
 
-                        {{ __('You are logged in!') }}
+                        @foreach ($clienti as $item)
+                            <div class="box-user">
+                                <h1>
+                                    {{$item->name}}
+                                </h1>
+                                <p>punti: <strong>{{$item->punti}}</strong></p>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <style>
+    h1{
+        font-size: 1.2rem;
+    }
+    
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box-user{
+        padding: 1em;
+        border: 1px solid black;
+        margin: 1em;
+        width: calc(100% / 5)
+    }
+
+    </style>
 @endsection

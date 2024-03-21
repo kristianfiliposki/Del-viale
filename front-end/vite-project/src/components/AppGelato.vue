@@ -180,7 +180,7 @@ h1{
 }
 
 .mini-box{
-    border: 4px solid black;
+    border: 0.4px solid black;
     object-fit: cover;
     object-position: center;
 }
@@ -188,6 +188,7 @@ h1{
 
 .register{
     border: 3px solid black;
+    background-color: white;
 }
 
 a{

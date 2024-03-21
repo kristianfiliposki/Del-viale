@@ -52,7 +52,7 @@ export default {
           <!-- btn contattaci -->
           <button type="button" class="btn bg-grey m-8">
             <!-- link  ContactUs -->
-              <a href="/contact" class="nav-link c-white">
+              <a href="http://127.0.0.1:8000/admin/sms/create" class="nav-link c-white">
                 <strong>
                   Contattaci
                 </strong>            
@@ -71,13 +71,16 @@ export default {
 <style scoped>
 .header-container{
   width: 100%;
-  background-color: rgba(210, 210, 210, 0.9);
+  background-color: rgba(30, 30, 30, 0.90);
   z-index: 999;
   position: fixed;
   margin: 0;
 }
 
-a{text-decoration: none;}
+a{
+  text-decoration: none;
+  color: white;
+}
 .container-logo{
   margin-left: 10%;
   border-radius: 40%;

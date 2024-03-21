@@ -10,6 +10,7 @@ class Message extends Model
     use HasFactory;
 
     public $fillable=[
-        'text',
+        'autore',
+        'testo',
     ];
 }

@@ -32,8 +32,13 @@ class MessaggiController extends Controller
     {
         $data=$request->all();
         $newMessages=new Message;
+        $newMessages->autore=$data['autore'];
         $newMessages->testo=$data['testo'];
         $newMessages->save();
+
+34
+        
+
         return redirect()->route('admin.index');
 
     }

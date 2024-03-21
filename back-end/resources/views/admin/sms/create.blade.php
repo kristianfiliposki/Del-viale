@@ -9,9 +9,14 @@
         <div>
             <form action="{{ route('admin.sms.store') }}" method="post">
                 @csrf
+                <div class="form-group ">
+                  <label for="autore"><h5>autore del messaggio</h5></label>
+                  <textarea class="form-control" id="autore" name="autore" required></textarea>
+                </div>
+                <br>
                 <div class="form-group">
-                  <label for="testo"><h5>Il tuo pensiero è fondamentale</h5></label>
-                  <textarea class="form-control" id="testo" name="testo" rows="3" required></textarea>
+                    <label for="testo"><h5>Il tuo pensiero è fondamentale</h5></label>
+                    <textarea class="form-control" id="testo" name="testo" rows="3" required></textarea>
                 </div>
                 <br>
                 <button type="submit" class="btn btn-primary">Facci conoscere i tuoi pensieri!</button>
