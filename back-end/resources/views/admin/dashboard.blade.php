@@ -38,6 +38,7 @@
     .box-user{
         padding: 1em;
         border: 1px solid black;
+        border-radius: 0.9em;
         margin: 1em;
         width: calc(100% / 5)
     }

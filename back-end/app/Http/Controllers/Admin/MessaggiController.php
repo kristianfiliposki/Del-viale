@@ -34,9 +34,7 @@ class MessaggiController extends Controller
         $newMessages=new Message;
         $newMessages->autore=$data['autore'];
         $newMessages->testo=$data['testo'];
-        $newMessages->save();
-
-34
+        $newMessages->save(); 
         
 
         return redirect()->route('admin.index');

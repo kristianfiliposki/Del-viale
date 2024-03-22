@@ -201,12 +201,13 @@ a{
     border: 2px solid grey;
     border-radius: 60%;
 }
-.food-logo img{
-    object-fit: cover;
+.food-logo img, .box img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+.food-logo img{
     border-radius: 60%;
-
 }
 
 .partner{
