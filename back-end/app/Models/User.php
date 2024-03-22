@@ -9,15 +9,14 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use App\models\Client;
 
-class User extends Authenticatable
+class User extends Authenticatable 
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    public function Client(){
-        return $this->belongTo(Client::class);
+    public function client()
+    {
+        return $this->belongsTo(Client::class);
     }
-    
-    
 
     /**
      * The attributes that are mass assignable.
@@ -25,6 +24,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'id',
         'name',
         'email',
         'password',

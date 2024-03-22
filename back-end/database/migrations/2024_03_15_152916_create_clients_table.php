@@ -16,8 +16,8 @@ return new class extends Migration
             /* user id  */
             $table->unsignedBigInteger("user_id")->nullable()->unique();
             $table->foreign("user_id")->references("id")->on("users")->nullOnDelete();
-            /* role id  */
-            $table->unsignedBigInteger("role_id")->nullable();
+            /* foreign key referencing the id column in the roles table */
+            $table->unsignedBigInteger('role_id')->default(2)->nullable();
             $table->foreign("role_id")->references("id")->on("roles")->nullOnDelete();
 
             $table->string('name');

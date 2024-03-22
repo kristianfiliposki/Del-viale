@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Client;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
@@ -20,7 +21,7 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
-        return view('auth.register');
+        return view('auth.register'); // Replace with your view name
     }
 
     /**
@@ -35,13 +36,23 @@ class RegisteredUserController extends Controller
             'punti'=>['nullable','Integer'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'img_url' => ['nullable','string'],
         ]);
 
         $user = User::create([
             'name' => $request->name,
-            'punti' => $request->input('punti', 0), // Imposta il valore predefinito a 0 se non viene fornito alcun valore
             'email' => $request->email,
             'password' => Hash::make($request->password),
+        ]);
+
+        $userId = $user->id; // Access the generated ID
+
+        $client = $user->client()->create([
+            'name' => $request->name,
+            'user_id' => $userId,
+            'role_id' => $request->input('role_id', 2),
+            'punti' => $request->input('punti', 0),
+            'img_url' => $request->input('img_url', ''),
         ]);
 
         event(new Registered($user));
