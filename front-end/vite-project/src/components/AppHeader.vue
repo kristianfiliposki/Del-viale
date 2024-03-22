@@ -80,6 +80,7 @@ export default {
 a{
   text-decoration: none;
   color: white;
+  font-size: 0.9em;
 }
 .container-logo{
   margin-left: 10%;

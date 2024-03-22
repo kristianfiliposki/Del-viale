@@ -53,11 +53,31 @@ components: {
               @autoplayTimeLeft="onAutoplayTimeLeft"
               class="mySwiper"
             >
-                  <swiper-slide id="s1" class=" "><h1 class=" pacifico-regular ">Del viale</h1></swiper-slide>
-                  <swiper-slide id="s2"><h1 class=" pacifico-regular ">Del viale</h1></swiper-slide>
-                  <swiper-slide id="s3"><h1 class=" pacifico-regular ">Del viale</h1></swiper-slide>
-                  <swiper-slide id="s4"><h1 class=" pacifico-regular ">Del viale</h1></swiper-slide>
-                  <swiper-slide id="s5"><h1 class=" pacifico-regular ">Del viale</h1></swiper-slide>
+                  <swiper-slide id="s1" class=" ">
+                    <div class="box">
+                      <h1 class=" pacifico-regular ">Del viale</h1>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide id="s2">
+                    <div class="box">
+                      <h1 class=" pacifico-regular ">Del viale</h1>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide id="s3">
+                    <div class="box">
+                      <h1 class=" pacifico-regular ">Del viale</h1>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide id="s4">
+                    <div class="box">
+                      <h1 class=" pacifico-regular ">Del viale</h1>
+                    </div>
+                  </swiper-slide>
+                  <swiper-slide id="s5">
+                    <div class="box">
+                      <h1 class=" pacifico-regular ">Del viale</h1>
+                    </div>
+                  </swiper-slide>
                   <template #container-end>
                     <div class="autoplay-progress">
                       <svg viewBox="0 0 48 48" ref="progressCircle">
@@ -74,6 +94,17 @@ components: {
 
 </template>
 <style scoped>
+.box{
+  position: relative;
+  width: 36%;
+}
+
+h1{
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  line-height: 1em;
+}
 
 #s1{
     background-image: url('/public/img/gelato-vetrina.png');
@@ -172,7 +203,7 @@ components: {
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 10rem;
+  font-size: 7rem;
   color: white;
 }
 
