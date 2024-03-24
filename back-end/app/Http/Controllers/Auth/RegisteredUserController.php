@@ -47,7 +47,7 @@ class RegisteredUserController extends Controller
 
         $userId = $user->id; // Access the generated ID
 
-        $client = $user->client()->create([
+        $client = Client::create([
             'name' => $request->name,
             'user_id' => $userId,
             'role_id' => $request->input('role_id', 2),

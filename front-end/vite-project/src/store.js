@@ -1,5 +1,6 @@
 import {reactive} from 'vue'
 export const store=reactive({
+    isLoggedIn: false,
     data(){
         return{
             dati :[],
@@ -8,6 +9,7 @@ export const store=reactive({
 
                 },
             ],
+            clientData:[]
         }
     },
 })

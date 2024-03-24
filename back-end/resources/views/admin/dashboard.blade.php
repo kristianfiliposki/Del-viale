@@ -17,6 +17,9 @@
                                 <h1>
                                     {{$item->name}}
                                 </h1>
+                                <p>
+                                    {{$item->role->name}}
+                                </p>
                                 <p>punti: <strong>{{$item->punti}}</strong></p>
                             </div>
                         @endforeach

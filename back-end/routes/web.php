@@ -1,8 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\DashboardController; //<---- Import del controller precedentemente creato!
 use App\Http\Controllers\Admin\MessaggiController; 
+use App\Http\controllers\AuthRoleController;
+
+
 use App\models\Message;
 
 /*
@@ -23,10 +27,7 @@ Route::get('/',  function () {
 
 
 
-Route::middleware(['auth'])
-->prefix('admin') //definisce il prefisso "admin/" per le rotte di questo gruppo
-->name('admin.') //definisce il pattern con cui generare i nomi delle rotte cioè "admin.qualcosa"
-->group(function () {
+Route::middleware(['auth'])->prefix('admin') ->name('admin.') ->group(function () {
     
     //Siamo nel gruppo quindi:
     // - il percorso "/" diventa "admin/"
@@ -35,6 +36,8 @@ Route::middleware(['auth'])
     Route::get('/sms', [MessaggiController::class,'index'])->name('index');
     Route::get('/sms/create', [MessaggiController::class,'create'])->name('sms.create');
     Route::post('/sms', [MessaggiController::class, 'store'])->name('sms.store');
+    Route::get('/role', [AuthRoleController::class, 'getClientData']);
+    Route::get('/clients', [ClientController::class, 'show'])->name('dashboard');
 });
 
 require __DIR__ . '/auth.php';

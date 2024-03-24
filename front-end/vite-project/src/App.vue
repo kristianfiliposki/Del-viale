@@ -7,6 +7,7 @@ import { store } from './store.js'
 import axios from 'axios';
 
 export default{
+  
   components:{
     AppHeader,
     AppMain,
@@ -17,20 +18,36 @@ export default{
   data(){
     return{
       store,
+      clientData: null,
+      errorMessage: null,
 
     }
   },
-  methods:{
-       call(){
-        axios.get("http://127.0.0.1:8000/api/dati").then(risultato=>{
-          store.dati=risultato.data;
-          console.log(store.dati);})
-      },
+  methods: {
+    async fetchClientData() {
+      try {
+        const response = await axios.get('/api/client-data');
+        this.clientData = response.data;
+        store.clientData = response.data; 
+        console.log(
+          store.clientData
+
+        )
+      } catch (error) {
+        if (error.response && error.response.status === 401) {
+          this.errorMessage = 'Non autorizzato';
+        } else {
+          this.errorMessage = 'Errore durante il recupero dei dati del cliente';
+        }
+      }
+    },
   },
-  mounted(){
-    this.call();
-  },
-}  
+mounted() {
+  // Chiama la funzione call se necessario
+  // Potresti voler caricare i dati in base a condizioni specifiche
+  this.fetchClientData();
+}
+}
 </script>
 
 <template>

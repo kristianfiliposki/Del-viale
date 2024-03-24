@@ -40,7 +40,14 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+            // ... altre guardie
+        'api' => [
+            'driver' => 'token', // Sostituisci 'session' con 'token'
+            'provider' => App\Models\User::class,
+        ],
     ],
+        
+    
 
     /*
     |--------------------------------------------------------------------------
