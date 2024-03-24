@@ -41,13 +41,15 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.dashboard' }}"
                                     href="{{ route('admin.dashboard') }}">
-                                    <i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> Dashboard
+                                    <i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> il mio profilo
                                 </a>
                             </li>
 
+
+
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="http://127.0.0.1:8000/admin/sms">
-                                   <i class="fa-regular fa-message fa-lg fa-fw"></i> Messaggi
+                                <a class="nav-link text-white"href="{{ route('admin.sms.create') }}">
+                                   <i class="fa-regular fa-message fa-lg fa-fw"></i> Scrivi un messaggio
                                 </a>
                             </li>
 

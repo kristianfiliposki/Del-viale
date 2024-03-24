@@ -31,18 +31,16 @@ export default{
                             <a href="/gelati">Gelati</a>
                         </div>
                         <div><a href="/torte" class="c-white">Torte</a></div>
-                        <div><a href="/caffe" class="c-white">Caffe</a></div>
-                        <div><a href="/caffe" class="c-white">Tavola calda</a></div>
+                        <div><a href="/coffe" class="c-white">Caffe</a></div>
+                        <div><a href="/coffe" class="c-white">Tavola calda</a></div>
 
 
                     </div>
                     <div class="miniblock">
                         <h3>compagnia</h3>
-                        <div>Chi siamo</div>
+                        <div><a href="/account-plus">Chi siamo</a></div>
                         <div><a href="/contact">contattaci</a></div>
-                        <div>Marchio</div>
-                        <div>Redazione</div>
-                        <div>Negozio</div>
+                        <div><a href="/">Il nostro sito</a></div>
 
                     </div>
                     <div class="miniblock">

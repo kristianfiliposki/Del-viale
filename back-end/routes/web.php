@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\DashboardController; //<---- Import del controller precedentemente creato!
 use App\Http\Controllers\Admin\MessaggiController; 
+use App\Http\Controllers\Admin\NavbarContoller; 
 use App\Http\controllers\AuthRoleController;
+
 
 
 use App\models\Message;
@@ -37,7 +39,9 @@ Route::middleware(['auth'])->prefix('admin') ->name('admin.') ->group(function (
     Route::get('/sms/create', [MessaggiController::class,'create'])->name('sms.create');
     Route::post('/sms', [MessaggiController::class, 'store'])->name('sms.store');
     Route::get('/role', [AuthRoleController::class, 'getClientData']);
-    Route::get('/clients', [ClientController::class, 'show'])->name('dashboard');
+    Route::get('/client', [ClientController::class, 'show'])->name('dashboard');
+    Route::get('/navbar', [NavbarContoller::class, 'index'])->name('navbar');
+
 });
 
 require __DIR__ . '/auth.php';
