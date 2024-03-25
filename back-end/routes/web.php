@@ -23,9 +23,7 @@ use App\models\Message;
 */
 
 
-Route::get('/',  function () {
-    return view('welcome');
-});
+
 
 
 
@@ -41,6 +39,7 @@ Route::middleware(['auth'])->prefix('admin') ->name('admin.') ->group(function (
     Route::get('/role', [AuthRoleController::class, 'getClientData']);
     Route::get('/client', [ClientController::class, 'show'])->name('dashboard');
     Route::get('/navbar', [NavbarContoller::class, 'index'])->name('navbar');
+
 
 });
 

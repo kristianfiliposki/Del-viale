@@ -128,7 +128,7 @@ Questo git-template fornisce lo scaffold di una web application realizzata con L
 	<summary>Clicca per mostrare il codice</summary>
 	
 	```php
-	@extends('layouts.admin')
+	@extends('admin.admin')
 
 	@section('content')
 	<div class="container-fluid mt-4">

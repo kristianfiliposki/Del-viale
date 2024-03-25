@@ -47,9 +47,8 @@ class ClientController extends Controller
            $cliente=Client::find($user_id) ;
    
            // Visualizza i dettagli del cliente
-           return view('admin.client.show', compact('cliente','user'));
-           return view('layouts.admin', compact('cliente','user'));
-
+           return view('admin.clients.show', compact('cliente','user'));
+           return view('layout.admin', compact('cliente','user'));
        }
 
 

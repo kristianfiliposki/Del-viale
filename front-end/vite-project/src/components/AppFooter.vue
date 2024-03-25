@@ -39,7 +39,7 @@ export default{
                     <div class="miniblock">
                         <h3>compagnia</h3>
                         <div><a href="/account-plus">Chi siamo</a></div>
-                        <div><a href="/contact">contattaci</a></div>
+                        <div><a href="http://127.0.0.1:8000/admin/sms/create">contattaci</a></div>
                         <div><a href="/">Il nostro sito</a></div>
 
                     </div>

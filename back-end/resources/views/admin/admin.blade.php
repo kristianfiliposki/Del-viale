@@ -45,13 +45,26 @@
                                 </a>
                             </li>
 
+                
+                            @if (($cliente->role_id)==1)
+                                <li class="nav-item">
+                                    <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.dashboard' }}"
+                                        href="{{ route('admin.sms.store') }}">
+                                        <i class="fa-regular fa-message fa-lg fa-fw"></i> tutti i messaggi
+                                    </a>
+                                </li>
+                            
+                            @else
+                                <li class="nav-item">
+                                    <a class="nav-link text-white"href="{{ route('admin.sms.create') }}">
+                                    <i class="fa-regular fa-message fa-lg fa-fw"></i> Scrivi un messaggio
+                                    </a>
+                                </li>
+                            @endif
+                            
 
 
-                            <li class="nav-item">
-                                <a class="nav-link text-white"href="{{ route('admin.sms.create') }}">
-                                   <i class="fa-regular fa-message fa-lg fa-fw"></i> Scrivi un messaggio
-                                </a>
-                            </li>
+
 
 
 

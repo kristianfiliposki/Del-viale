@@ -21,7 +21,7 @@ class NavbarContoller extends Controller
         $user_id=$user->id;
         $cliente=Client::find($user_id) ;
 
-        return view('layouts.admin', compact('cliente','user'));
+        return view('admin.admin', compact('cliente','user'));
     }
 
     /**
