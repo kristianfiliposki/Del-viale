@@ -165,7 +165,48 @@
                 color: white;
                 font-size: 15px;
             }
-            
+            @media only screen and (max-width: 990px){
+                .all .container{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .container .card-1 .photo{
+                    width: 100%;
+                    padding: 20px;
+                }
+                .card-1 .photo img{
+                    width: 100%;
+                    border-radius: 20px;
+                    padding: 0;
+                }
+                .container .card-2{
+                    text-align: center;
+                    padding: 0;
+                }
+                .boxx .box{
+                    margin: 20px;
+                }
+                .box .desc-1 h3{
+                    margin: 0;
+                    padding: 0;
+                }
+                .button{
+                    display: flex;
+                    padding-bottom: 20px;
+                }
+                .click{
+                    justify-content: space-evenly;
+                }
+                .click .chat{
+                    padding: 20px 100px;
+                    font-size: 15px;
+                }
+                .click .follow{
+                    padding: 20px 100px;
+                }
+            }
             @media only screen and (max-width: 870px){
                 .all .container{
                     width: 100%;

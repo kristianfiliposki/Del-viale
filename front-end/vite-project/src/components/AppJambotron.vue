@@ -207,6 +207,34 @@ h1{
   color: white;
 }
 
-        
+@media screen and (max-width: 800px) {
+  .links-container{
+    flex-wrap: wrap;
+  }
+   a{
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width:650px) {
+    .pacifico-regular {
+    background-color: rgba(0,0,0, 0.4);
+    border-radius: 10%;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:2.7em;
+    color: white;
+  }
+  .links-container{
+    flex-wrap: wrap;
+  }
+   a{
+    font-size: 0.5rem;
+  }
+  .btn button{
+  min-height:2em;
+  padding: 0.2em;
+}
+}
 
 </style>

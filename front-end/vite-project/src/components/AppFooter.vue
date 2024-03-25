@@ -81,7 +81,7 @@ export default{
 
 .linkedin{
 
-    padding: 3px;
+    padding: 1em;
     border-radius: 2%;
     font-size: 1.1em;
 }
@@ -132,7 +132,7 @@ a{
 
 
 .block-w{
-    min-width: 70%;
+    min-width: 90%;
     max-width: 70%;
     height: 100%;
     min-height: 60%;
@@ -166,7 +166,8 @@ img{
 #containerG{
     background-color:rgb(60, 60, 60);
     height: 35em;
-    padding: 10%;
+    padding:10% 0;
+    width: 100%;
 }
 
 
@@ -217,7 +218,7 @@ img{
 }
 
 #blockG{
-    height:90%;
+    height:100%;
     justify-content: space-between;
     align-items: center;
     border-top: 5px solid white;

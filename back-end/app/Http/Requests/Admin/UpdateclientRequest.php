@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\Admin;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreclientRequest extends FormRequest
+class UpdateclientRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
      */
     public function authorize(): bool
     {
-        return true;
+        return false;
     }
 
     /**
@@ -22,11 +22,7 @@ class StoreclientRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'role_id' => 'sometimes|required|exists:roles,id',
-            'name' => 'sometimes|required|string|max:255',
-            'punti' => 'sometimes|required|integer',
-            'img_url' => 'nullable|url',
-            // ... other client fields
+            //
         ];
     }
 }

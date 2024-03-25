@@ -38,6 +38,8 @@ Route::middleware(['auth'])->prefix('admin') ->name('admin.') ->group(function (
     Route::post('/sms', [MessaggiController::class, 'store'])->name('sms.store');
     Route::get('/role', [AuthRoleController::class, 'getClientData']);
     Route::get('/client', [ClientController::class, 'show'])->name('dashboard');
+    Route::put('/clients', [ClientController::class, 'update'])->name('update.secret');
+    Route::get('/modify', [ClientController::class, 'edit'])->name('edit.secret');
     Route::get('/navbar', [NavbarContoller::class, 'index'])->name('navbar');
 
 

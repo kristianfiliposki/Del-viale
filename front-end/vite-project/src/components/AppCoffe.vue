@@ -201,6 +201,34 @@ a{
     padding: 3%;
 }
 
+@media screen and (max-width: 800px) {
+    .food-platform{
+        flex-direction: column;
+        align-items: center;
+    }
+    a{
+    padding: 5%;
+    border: 0;
+    text-decoration: none;
+    }
+    .wrapper{    padding-top: 20%;}
 
+
+}
+
+@media screen and (max-width: 480px) {
+    .food-platform{
+        flex-direction: column;
+        align-items: center;
+    }
+    a{
+    padding: 5%;
+    border: 0;
+    text-decoration: none;
+    }
+    .wrapper{    padding-top: 20%;}
+
+
+}
 
 </style>

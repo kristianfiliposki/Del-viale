@@ -28,12 +28,11 @@ export default {
         </div>
       </div>
       <!-- Macro Aree -->
-      <div class=" d-flex flex-justify-center col-4  ">
+      <div class="links-container d-flex flex-justify-center col-4  ">
         <a href="/torte" class="nav-link c-black m-8">TORTE</a>
         <a href="/gelati" class="nav-link c-black m-8">GELATI</a>
         <a href="/coffe" class="nav-link c-black m-8">TAVOLA CALDA</a>
         <a href="/account-plus" class="nav-link c-black m-8">ACCOUNT PLUS</a>
-
 
       </div>
       <!-- Pulsanti -->
@@ -77,11 +76,23 @@ export default {
   margin: 0;
 }
 
+.btn{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn button{
+  min-height:4em;
+}
+
 a{
   text-decoration: none;
   color: white;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
+
+
 .container-logo{
   margin-left: 10%;
   border-radius: 40%;
@@ -92,4 +103,20 @@ a{
   border-radius: 55%;
 
 }
+
+
+
+@media screen and (max-width: 800px) {
+  .links-container{
+    flex-wrap: wrap;
+  }
+   a{
+    font-size: 0.5rem;
+  }
+  .btn button{
+  min-height:2em;
+  padding: 0.2em;
+};
+}
+
 </style>

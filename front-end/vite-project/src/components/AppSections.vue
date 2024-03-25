@@ -46,7 +46,7 @@ import AppCarosel from './AppCarosel.vue';
                 <div class="col-4 container-section">
                     <button type="button" class="btn bg-white w-100">
                         <strong>
-                          <a href="https://www.justeat.it/restaurants-la-gelateria-del-viale-fiano-romano/menu" class="d-flex justify-content-center align-content-around f-24">
+                          <a href="https://www.justeat.it/restaurants-la-gelateria-del-viale-fiano-romano/menu" class="d-flex justify-content-center align-content-around ">
                             <div class="food-logo">
                                 <img src="/public/img/just-eat.png" alt="foto">
                             </div>
@@ -61,7 +61,7 @@ import AppCarosel from './AppCarosel.vue';
                 <div class="col-4 container-section">
                     <button type="button" class="btn bg-white w-100">
                         <strong>
-                            <a href="https://deliveroo.it/it/menu/Capena/capena/la-gelateria-del-viale/?geohash=sr2zykq6nfcp" class="d-flex justify-content-center align-content-around f-24">
+                            <a href="https://deliveroo.it/it/menu/Capena/capena/la-gelateria-del-viale/?geohash=sr2zykq6nfcp" class="d-flex justify-content-center align-content-around ">
                                 <div class="food-logo">
                                     <img src="/public/img/deliveroo.jpeg" alt="foto">
                                 </div>
@@ -76,7 +76,7 @@ import AppCarosel from './AppCarosel.vue';
                 <div class="col-4 container-section">
                     <button type="button" class="btn bg-white w-100">
                         <strong>
-                         <a href="https://glovoapp.com/it/it/fiano-romano/la-gelateria-del-viale-frc/" class="d-flex justify-content-center align-content-around f-24">
+                         <a href="https://glovoapp.com/it/it/fiano-romano/la-gelateria-del-viale-frc/" class="d-flex justify-content-center align-content-around">
                             <div class="food-logo">
                                 <img src="/public/img/glovo.png" alt="foto">
                             </div>
@@ -101,7 +101,7 @@ import AppCarosel from './AppCarosel.vue';
                 </strong>
             </h2>
             <div class="col-12">
-                <div class="btn w-100 d-flex justify-content-center">
+                <div class="box btn w-100 d-flex justify-content-center numbers">
                     <div class="d-flex justify-content-center align-content-around f-32 w-70 number p-8 m-8">0765689337</div>
                     <div class="d-flex justify-content-center align-content-around f-32 w-70 number p-8 m-8">3204684143</div>
                 </div>
@@ -172,6 +172,61 @@ a{
 .food-platform{
     padding: 3%;
 }
-
+@media screen and (max-width: 900px) {
+    .food-platform{
+        flex-direction: column;
+        align-items: center;
+    }
+    a{
+    padding: 5%;
+    border: 0;
+    text-decoration: none;
+    }
+    .numbers{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .numbers div{
+    }
+}
+@media screen and (max-width: 650px) {
+    .food-platform{
+        flex-direction: column;
+        align-items: center;
+    }
+    a{
+    padding: 5%;
+    border: 0;
+    text-decoration: none;
+    }
+    .numbers{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .number{
+        font-size: 1.5em
+    }
+}
+@media screen and (max-width: 480px) {
+    .food-platform{
+        flex-direction: column;
+        align-items: center;
+    }
+    a{
+    padding: 5%;
+    border: 0;
+    text-decoration: none;
+    }
+    .numbers{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .number{
+        font-size: 1em
+    }
+}
 
 </style>
