@@ -36,8 +36,9 @@
                             </div>
                         </div>
                         <div class="card-2">                            
-                            <h1>{{ Auth::user()->name }}</h1>
-                            <h3>Email: {{ Auth::user()->email }}</h3>
+                            <h1>{{ $cliente->role->name }}:{{ Auth::user()->name }}</h1>
+                            <h4>Email: {{ Auth::user()->email }}</h4>
+
                             <div class="boxx">
                                 <div class="box">
                                     <div class="desc-1">
