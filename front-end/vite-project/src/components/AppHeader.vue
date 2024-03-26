@@ -77,13 +77,13 @@ export default {
 }
 
 .btn{
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .btn button{
-  min-height:4em;
+  min-height:3em;
 }
 
 a{
