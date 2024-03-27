@@ -43,11 +43,12 @@ export default{
                         <div><a href="/">Il nostro sito</a></div>
 
                     </div>
-                    <div class="miniblock">
+                    <div class="miniblock posizione">
                         <h2>Dove siamo?</h2>
+                        <div class="c-white w-80">Via Pietro Nenni, 2c, 00065 Fiano Romano RM</div>
                         <div class="w-100 h-80 c-white">
-                            <div class="w-110 h-70">     
-                                <img src="/public/img/entrata.jpeg" alt="foto" class="foto-footer">                   
+                            <div class="w-110 h-100 mappa">     
+                                <img src="/public/img/mappa.jpeg" alt="foto" class="foto-footer">                   
                             </div>
                         </div>
                     </div>
@@ -146,7 +147,6 @@ max-width: 18em;
 
 div>h2{
 margin-top: 20px; 
-margin-bottom: 40px;
 }
 
 img{
@@ -243,5 +243,13 @@ img{
 .foto-footer{
     object-fit: cover;
     border: 1px solid white;
+}
+.mappa,.mappa img{
+    border-radius: 2em;
+}
+@media screen and (max-width: 600px) {
+.posizione{
+    display: none;
+}
 }
 </style>
